@@ -1,0 +1,1031 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "serialNumber": "urn:uuid:ba886177-dd30-497a-813f-8be793307c85",
+  "metadata": {
+    "timestamp": "2026-11-20T10:16:39.452Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "npm",
+          "version": "11.19.1"
+        },
+        {
+          "type": "application",
+          "name": "cyclonedx-npm",
+          "group": "@cyclonedx",
+          "version": "7.0.1",
+          "author": "Jan Kowalleck",
+          "description": "Create CycloneDX Software Bill of Materials (SBOM) from NPM projects.",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-node-npm.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-npm#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-npm/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:constraint:engine:node",
+              "value": ">=20.18.0"
+            },
+            {
+              "name": "cdx:npm:package:constraint:engine:npm",
+              "value": ">=9"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "cyclonedx-library",
+          "group": "@cyclonedx",
+          "version": "10.5.0",
+          "author": "Jan Kowalleck",
+          "description": "Core functionality of CycloneDX for JavaScript (Node.js or WebBrowser).",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-javascript-library.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:constraint:engine:node",
+              "value": ">=20.18.0"
+            }
+          ]
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "advent-rider-app",
+      "version": "1.0.0",
+      "bom-ref": "advent-rider-app@1.0.0",
+      "purl": "pkg:npm/advent-rider-app@1.0.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:private",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": ""
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "vite",
+      "version": "7.3.8",
+      "bom-ref": "advent-rider-app@1.0.0|vite@7.3.8",
+      "author": "Evan You",
+      "description": "Native-ESM powered web dev build tool",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/vite@7.3.8",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/vitejs/vite.git#packages/vite",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+        },
+        {
+          "url": "https://vite.dev",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/vitejs/vite/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/vite/-/vite-7.3.8.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "ded4e2efc3002a1564f61f986555cc43c3ce9a7789b84f7b4143c05ad260847ce11fb040ca2a90382d8a661d4358eb2efd4481d9c4578739cf07269a6ef6177f"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": "^20.19.0 || >=22.12.0"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/vite"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "ded4e2efc3002a1564f61f986555cc43c3ce9a7789b84f7b4143c05ad260847ce11fb040ca2a90382d8a661d4358eb2efd4481d9c4578739cf07269a6ef6177f"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "esbuild",
+      "version": "0.28.2",
+      "bom-ref": "advent-rider-app@1.0.0|esbuild@0.28.2",
+      "description": "An extremely fast JavaScript and CSS bundler and minifier.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/esbuild@0.28.2",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/evanw/esbuild.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/esbuild/-/esbuild-0.28.2.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "1ca54b4bc76f208fb1a0a5bd926ab16d12ab9d61177c926bfc56618499a2a880747b4e7740d605a8e068b9330efe4e6c203e0cbc28940afbfc6fd338877db020"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=18"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/esbuild"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "1ca54b4bc76f208fb1a0a5bd926ab16d12ab9d61177c926bfc56618499a2a880747b4e7740d605a8e068b9330efe4e6c203e0cbc28940afbfc6fd338877db020"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fdir",
+      "version": "6.5.0",
+      "bom-ref": "advent-rider-app@1.0.0|fdir@6.5.0",
+      "author": "thecodrr",
+      "description": "The fastest directory crawler & globbing alternative to glob, fast-glob, & tiny-glob. Crawls 1m files in < 1s",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fdir@6.5.0",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/thecodrr/fdir.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/thecodrr/fdir#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/thecodrr/fdir/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "b486d8b596ee70eb340511aa3c992c84951874bf920c7edd54cf208f2f84469dd60148cb105244fb4da46a7c87b708d63a7c2b298062c0098cd29e242c90275e"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=12.0.0"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/fdir"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "b486d8b596ee70eb340511aa3c992c84951874bf920c7edd54cf208f2f84469dd60148cb105244fb4da46a7c87b708d63a7c2b298062c0098cd29e242c90275e"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "picomatch",
+      "version": "4.0.7",
+      "bom-ref": "advent-rider-app@1.0.0|picomatch@4.0.7",
+      "author": "Jon Schlinkert",
+      "description": "Blazing fast and accurate glob matcher written in JavaScript, with no dependencies and full support for standard and extended Bash glob features, including braces, extglobs, POSIX brackets, and regular expressions.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/picomatch@4.0.7",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/micromatch/picomatch.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/micromatch/picomatch",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/micromatch/picomatch/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "a9c26ef3c436216a89b030f9dbd24a31dc069bf76f2275b81ef427470887f49b62849bf318eb1c0ed1c4df1d6904a794393cac43c91598b9c9da426eef285c18"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=12"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/picomatch"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "a9c26ef3c436216a89b030f9dbd24a31dc069bf76f2275b81ef427470887f49b62849bf318eb1c0ed1c4df1d6904a794393cac43c91598b9c9da426eef285c18"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "postcss",
+      "version": "8.5.33",
+      "bom-ref": "advent-rider-app@1.0.0|postcss@8.5.33",
+      "author": "Andrey Sitnik",
+      "description": "Tool for transforming styles with JS plugins",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/postcss@8.5.33",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/postcss/postcss.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://postcss.org/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/postcss/postcss/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/postcss/-/postcss-8.5.33.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "4551c453dfcfa751678ebfcca4026c668003ba408a85f222d793ae9c46221a4b489182e43d5bc2d6c8a85a89460d2ed7072313c7d9bf2066eba3426cd77ce19d"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": "^10 || ^12 || >=14"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/postcss"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "4551c453dfcfa751678ebfcca4026c668003ba408a85f222d793ae9c46221a4b489182e43d5bc2d6c8a85a89460d2ed7072313c7d9bf2066eba3426cd77ce19d"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "rollup",
+      "version": "4.68.7",
+      "bom-ref": "advent-rider-app@1.0.0|rollup@4.68.7",
+      "author": "Rich Harris",
+      "description": "Next-generation ES module bundler",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/rollup@4.68.7",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/rollup/rollup.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://rollupjs.org/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/rollup/rollup/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/rollup/-/rollup-4.68.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "0b187350873ea1cc4f016c47b9f7fe3c096ea16d68b43e9d1eaa8f2b6876437f1603555893ede08b35fa344839b766bcc8d1906a21ccd51ed5faa7705aebe9e5"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=18.0.0"
+        },
+        {
+          "name": "cdx:npm:package:constraint:engine:npm",
+          "value": ">=8.0.0"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/rollup"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "0b187350873ea1cc4f016c47b9f7fe3c096ea16d68b43e9d1eaa8f2b6876437f1603555893ede08b35fa344839b766bcc8d1906a21ccd51ed5faa7705aebe9e5"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "bom-ref": "advent-rider-app@1.0.0|tinyglobby@0.2.17",
+      "author": "Superchupu",
+      "description": "A fast and minimal alternative to globby and fast-glob",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/tinyglobby@0.2.17",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/SuperchupuDev/tinyglobby.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://superchupu.dev/tinyglobby",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/SuperchupuDev/tinyglobby/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "c1747f758a5ca8a99f5a911d66388a24ec023459dd0f40cc9eb5bf7188d51adb449017d581c2c51e836b963e3b9a339589cf72c8dbbae5a96c805e0d4324dada"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=12.0.0"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/tinyglobby"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "c1747f758a5ca8a99f5a911d66388a24ec023459dd0f40cc9eb5bf7188d51adb449017d581c2c51e836b963e3b9a339589cf72c8dbbae5a96c805e0d4324dada"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "darwin-arm64",
+      "group": "@esbuild",
+      "version": "0.28.2",
+      "bom-ref": "advent-rider-app@1.0.0|@esbuild/darwin-arm64@0.28.2",
+      "description": "The macOS ARM 64-bit binary for esbuild, a JavaScript bundler.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/darwin-arm64@0.28.2",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/evanw/esbuild.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.28.2.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "9f82aa90e42badac4725c82333546fc1b8a07d028828956933bc69f8ab318b2512ad17485e7b7bdd586b3c0c747d5e388607e62152a3c4c37d275b798f249593"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=18"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/darwin-arm64"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "9f82aa90e42badac4725c82333546fc1b8a07d028828956933bc69f8ab318b2512ad17485e7b7bdd586b3c0c747d5e388607e62152a3c4c37d275b798f249593"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "nanoid",
+      "version": "3.3.20",
+      "bom-ref": "advent-rider-app@1.0.0|nanoid@3.3.20",
+      "author": "Andrey Sitnik",
+      "description": "A tiny (116 bytes), secure URL-friendly unique string ID generator",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/nanoid@3.3.20",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/ai/nanoid.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/ai/nanoid#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/ai/nanoid/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.20.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "b8a760d86dc63422909fd6f260ea716c6aab4f67c63b9291b7927ff1bde9a24f2b4faab119617a871332262118b407fe155c98b83f6145a0ea5f9b8f15827865"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": "^10 || ^12 || ^13.7 || ^14 || >=15.0.1"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/nanoid"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "b8a760d86dc63422909fd6f260ea716c6aab4f67c63b9291b7927ff1bde9a24f2b4faab119617a871332262118b407fe155c98b83f6145a0ea5f9b8f15827865"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "picocolors",
+      "version": "1.1.1",
+      "bom-ref": "advent-rider-app@1.0.0|picocolors@1.1.1",
+      "author": "Alexey Raspopov",
+      "description": "The tiniest and the fastest library for terminal output formatting with ANSI colors",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/picocolors@1.1.1",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/alexeyraspopov/picocolors.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/alexeyraspopov/picocolors#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/alexeyraspopov/picocolors/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "c5c787dac9e1b5be4cf658aa0ec984c39ea57b7efa993664117fe311bfd1c4d1727a036e97b78db250973fd1438ff2dcbb45fc284c8c71e3f69eda5a1eb0c454"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/picocolors"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "c5c787dac9e1b5be4cf658aa0ec984c39ea57b7efa993664117fe311bfd1c4d1727a036e97b78db250973fd1438ff2dcbb45fc284c8c71e3f69eda5a1eb0c454"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "source-map-js",
+      "version": "1.2.4",
+      "bom-ref": "advent-rider-app@1.0.0|source-map-js@1.2.4",
+      "author": "Valentin 7rulnik Semirulnik",
+      "description": "Generates and consumes source maps",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/source-map-js@1.2.4",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/7rulnik/source-map-js.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/7rulnik/source-map-js",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/7rulnik/source-map-js/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.4.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "27b66332f1ddf4ed5f713ff9574f5059a69297605b5b1dc5e8ed3cb2975ef3635a99ff540741b145520f88d6d5b1d2a4a22cc7892a53a1da37be9d9b032f7530"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=6.0.0"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/source-map-js"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "27b66332f1ddf4ed5f713ff9574f5059a69297605b5b1dc5e8ed3cb2975ef3635a99ff540741b145520f88d6d5b1d2a4a22cc7892a53a1da37be9d9b032f7530"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "rollup-darwin-arm64",
+      "group": "@rollup",
+      "version": "4.68.7",
+      "bom-ref": "advent-rider-app@1.0.0|@rollup/rollup-darwin-arm64@4.68.7",
+      "author": "Lukas Taegert-Atkinson",
+      "description": "Native bindings for Rollup",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40rollup/rollup-darwin-arm64@4.68.7",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/rollup/rollup.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://rollupjs.org/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/rollup/rollup/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.68.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "2e0bb6015ee36ce4cd361910fcebab366ed29eabb5531ff7cbb93cab8edf6e93dadeaeb7688cca2a9d711736b1e4a1f8a5c754cdb9d7feb8ae16cc4a7e5b05fa"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@rollup/rollup-darwin-arm64"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "2e0bb6015ee36ce4cd361910fcebab366ed29eabb5531ff7cbb93cab8edf6e93dadeaeb7688cca2a9d711736b1e4a1f8a5c754cdb9d7feb8ae16cc4a7e5b05fa"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "estree",
+      "group": "@types",
+      "version": "1.0.10",
+      "bom-ref": "advent-rider-app@1.0.0|@types/estree@1.0.10",
+      "description": "TypeScript definitions for estree",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40types/estree@1.0.10",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git#types/estree",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/estree",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/@types/estree/-/estree-1.0.10.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "953c8e32739c991073742bfaff8cd4642ac4855d31aea422519059b5571b98b1c15ca2e737cabcf6fff029117f4341dbc15b2a6c81b7a391c3a0597db1db8cfa"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@types/estree"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "953c8e32739c991073742bfaff8cd4642ac4855d31aea422519059b5571b98b1c15ca2e737cabcf6fff029117f4341dbc15b2a6c81b7a391c3a0597db1db8cfa"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "advent-rider-app@1.0.0",
+      "dependsOn": [
+        "advent-rider-app@1.0.0|vite@7.3.8"
+      ]
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|vite@7.3.8",
+      "dependsOn": [
+        "advent-rider-app@1.0.0|esbuild@0.28.2",
+        "advent-rider-app@1.0.0|fdir@6.5.0",
+        "advent-rider-app@1.0.0|picomatch@4.0.7",
+        "advent-rider-app@1.0.0|postcss@8.5.33",
+        "advent-rider-app@1.0.0|rollup@4.68.7",
+        "advent-rider-app@1.0.0|tinyglobby@0.2.17"
+      ]
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|esbuild@0.28.2",
+      "dependsOn": [
+        "advent-rider-app@1.0.0|@esbuild/darwin-arm64@0.28.2"
+      ]
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|fdir@6.5.0",
+      "dependsOn": [
+        "advent-rider-app@1.0.0|picomatch@4.0.7"
+      ]
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|picomatch@4.0.7"
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|postcss@8.5.33",
+      "dependsOn": [
+        "advent-rider-app@1.0.0|nanoid@3.3.20",
+        "advent-rider-app@1.0.0|picocolors@1.1.1",
+        "advent-rider-app@1.0.0|source-map-js@1.2.4"
+      ]
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|rollup@4.68.7",
+      "dependsOn": [
+        "advent-rider-app@1.0.0|@rollup/rollup-darwin-arm64@4.68.7",
+        "advent-rider-app@1.0.0|@types/estree@1.0.10"
+      ]
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|tinyglobby@0.2.17",
+      "dependsOn": [
+        "advent-rider-app@1.0.0|fdir@6.5.0",
+        "advent-rider-app@1.0.0|picomatch@4.0.7"
+      ]
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|@esbuild/darwin-arm64@0.28.2"
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|nanoid@3.3.20"
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|picocolors@1.1.1"
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|source-map-js@1.2.4"
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|@rollup/rollup-darwin-arm64@4.68.7"
+    },
+    {
+      "ref": "advent-rider-app@1.0.0|@types/estree@1.0.10"
+    }
+  ]
+}

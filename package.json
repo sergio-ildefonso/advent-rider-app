@@ -1,0 +1,15 @@
+{
+  "name": "advent-rider-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sbom": "npx --yes @cyclonedx/cyclonedx-npm --spec-version 1.6 --output-format JSON --output-file sbom.json package-lock.json && node scripts/add-hashes.mjs"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}
