@@ -29,7 +29,7 @@ flutter build apk --release
 cp build/app/outputs/flutter-apk/app-release.apk ../advent-rider-app/public/downloads/AdventRider.apk
 ```
 
-Ao atualizar a versão da app, atualiza também o número em `index.html` (`Android · versão 1.0`) e o `version` em `package.json` se aplicável.
+Ao atualizar a versão da app, atualiza também o número em `index.html` (`Android · versão 1.0.1`) e o `version` em `package.json` se aplicável.
 
 ## Conteúdo
 
